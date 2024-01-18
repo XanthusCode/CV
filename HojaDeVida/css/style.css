@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right,cadetblue, #e45757);
+    font-family: cursive;
+}
+
+.navbar{
+    text-align: end;
+    margin: 15px;
+}
+.navbar li{ 
+    list-style: none;
+}
+
+.navbar a:hover{
+    transform: scale(1.1);
+    color: rgb(225, 167, 19);
+    transition: 0.2s ease;
+}
+
+
+a{  
+    margin: 20px;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 15px;
+}
+a:hover{
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
+.titulo{
+    text-align: center;
+    text-shadow: 2px 2px 5px red;
+    color:white;
+    padding: 5px;
+    margin: 20px;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.container{
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 15px;
+    width: 50%; /* Ancho de algo.. */
+    border-radius: 15px;
+    box-shadow: 10px 1px 34px black;
+    -webkit-box-shadow: 10px 1px 34px black;
+    -moz-box-shadow: 10px 1px 34px  black;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 5px;
+    margin: 0 30px;
+}
+
+.box-1{
+    width: 33%; 
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px; 
+}
+
+.info{
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+ 
+p{
+    padding: 2px;
+}
+
+span{
+    color:white;
+    padding: 1px;
+}
+
+span i{
+    padding: 5px;
+}
+
+.box-2{
+    width: 33%; 
+    margin: 0 33%;
+    text-align: center; 
+    border: 2px solid black;
+    border-radius: 5px; 
+}
+
+.box-3{
+    width: 33%;
+    margin: 0 66%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px; 
+}
