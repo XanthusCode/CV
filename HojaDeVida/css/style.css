@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -5,8 +7,8 @@
 }
 
 body{
-    background-image: linear-gradient(to right,cadetblue, #df7878);
-    font-family:Arial, Helvetica, sans-serif;
+    background-color: #9ec8ca; /*linear-gradient(to right,cadetblue, #df7878)*/
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .navbar{
@@ -25,7 +27,7 @@ body{
 
 a{  
     color: black;
-    margin: 20px;
+    margin: 15px;
     text-decoration: none;
     padding: 5px;
     border-radius: 15px;
@@ -33,43 +35,39 @@ a{
 
 .titulo{
     text-align: center;
-    text-shadow: 2px 2px 5px red;
-    color:white;
+    color:black;
     padding: 5px;
     margin: 20px;
-    font-style: italic;
+    font-weight: bold;
     font-size: 30px;
 }
 
 .container{
-    width: 60%; /* Ancho de algo.. */
-    height: 700px;
+    width: 80%; /* Ancho de algo.. */
+    height: 800px;
     margin: 0 auto;
+    background-color: aliceblue;
     border: 1px solid black;
     padding: 15px;
     border-radius: 15px;
     backdrop-filter: blur(10px);
-    box-shadow: 10px 1px 22px black;
-    -webkit-box-shadow: 10px 1px 22px black;
-    -moz-box-shadow: 10px 1px 22px  black;
+    text-align: center;
 }
- .container:hover{
+
+.container:hover{
     transform: scale(1);
-    
  }
 
 img{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 2px solid white;
     padding: 5px;
-    margin:  0 20px;
+    margin:  0 50px;
 }
 
 .imgs {
     padding-top: 50px;
-   text-align: center;
 }
 
 .logo-container{
@@ -95,29 +93,41 @@ img{
 }
 
 .info{
+    padding-top: 15px;
     border-bottom: 1px solid #333;
     padding-bottom: 5px;
     font-size: 22px;
     text-align: center;
 }
 
-p{
-    padding: 3px;
-    font-size: 16px;
-    margin-left: 5px;
+.info:hover{
+    color: gray;
+    transform: scale(1.1);
 }
+
+p{
+    padding:15px 0  15px;
+    font-size: 16px;
+}
+p:hover{
+    color: white;
+    background-color: cadetblue;
+    border-radius: 2px;
+    font-weight: bold;
+    
+}
+
 
 span{
     font-weight: bold;
-    color:white;
+    
 }
 span i{
     padding: 5px;
 }
 
-.info p span i a:hover {
-   
-    color: blueviolet;
+span i:hover {
+    color: cadetblue;
 }
 
 .columnas{
