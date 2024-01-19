@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: linear-gradient(to right,cadetblue, #e45757);
+    background-image: linear-gradient(to right,cadetblue, #df7878);
     font-family: cursive;
 }
 
@@ -46,20 +46,21 @@ a:hover{
 }
 
 .container{
+    height: 600px;
     margin: 0 auto;
-    border: 2px solid black;
+    border: 1px solid black;
     padding: 15px;
     width: 50%; /* Ancho de algo.. */
     border-radius: 15px;
-    box-shadow: 10px 1px 34px black;
-    -webkit-box-shadow: 10px 1px 34px black;
-    -moz-box-shadow: 10px 1px 34px  black;
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 1px 22px black;
+    -webkit-box-shadow: 10px 1px 22px black;
+    -moz-box-shadow: 10px 1px 22px  black;
 }
-
-.content{
-    display: flex;
-    flex-direction: column;
-}
+ .container:hover{
+    transform: scale(1);
+    
+ }
 
 img{
     width: 200px;
@@ -70,43 +71,50 @@ img{
     margin: 0 30px;
 }
 
-.box-1{
-    width: 33%; 
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 5px; 
+
+.imgs img{
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.logo{
+    align-items:flex-start;
+    padding-left: 0;
+    margin: 8px 0px 0px 0px;
+    width: 60px;
+    height: 60px;
+    border:  none;
+}
+
+.fa-solid{
+    margin: 10px 0px 0px 15px;
+}
+
+.logo:hover, .fa-solid:hover{
+    transform: scale(1.1);
 }
 
 .info{
     font-size: 22px;
-    padding-bottom: 5px;
+    padding: 15px 0 0 5px;
 }
+
  
 p{
     padding: 2px;
+    font-size: 16px;
 }
 
 span{
+    font-weight: bold;
     color:white;
-    padding: 1px;
 }
-
 span i{
     padding: 5px;
 }
-
-.box-2{
-    width: 33%; 
-    margin: 0 33%;
-    text-align: center; 
-    border: 2px solid black;
-    border-radius: 5px; 
-}
-
-.box-3{
-    width: 33%;
-    margin: 0 66%;
+.columnas{
+    width: 30%;
+    float: left;
+    margin-right: 5px;
     text-align: center;
-    border: 2px solid black;
-    border-radius: 5px; 
 }
