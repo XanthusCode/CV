@@ -6,7 +6,7 @@
 
 body{
     background-image: linear-gradient(to right,cadetblue, #df7878);
-    font-family: cursive;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .navbar{
@@ -18,21 +18,17 @@ body{
 }
 
 .navbar a:hover{
-    transform: scale(1.1);
+    transform: scale(0.7);
     color: rgb(225, 167, 19);
     transition: 0.2s ease;
 }
 
-
 a{  
+    color: black;
     margin: 20px;
     text-decoration: none;
     padding: 5px;
     border-radius: 15px;
-}
-a:hover{
-    background-color: transparent;
-    transform: scale(1.1);
 }
 
 .titulo{
@@ -46,11 +42,11 @@ a:hover{
 }
 
 .container{
-    height: 600px;
+    width: 60%; /* Ancho de algo.. */
+    height: 700px;
     margin: 0 auto;
     border: 1px solid black;
     padding: 15px;
-    width: 50%; /* Ancho de algo.. */
     border-radius: 15px;
     backdrop-filter: blur(10px);
     box-shadow: 10px 1px 22px black;
@@ -68,26 +64,30 @@ img{
     border-radius: 50%;
     border: 2px solid white;
     padding: 5px;
-    margin: 0 30px;
+    margin:  0 20px;
 }
 
+.imgs {
+    padding-top: 50px;
+   text-align: center;
+}
 
-.imgs img{
+.logo-container{
+    display: inline-block;
+    text-align: center;
     margin-right: 10px;
-    vertical-align: top;
 }
 
 .logo{
-    align-items:flex-start;
-    padding-left: 0;
-    margin: 8px 0px 0px 0px;
     width: 60px;
     height: 60px;
     border:  none;
+    display: inline-block;
+    margin-right: 5px;
 }
-
-.fa-solid{
-    margin: 10px 0px 0px 15px;
+.star i{
+    display: inline-block;
+    margin-left: 5px;
 }
 
 .logo:hover, .fa-solid:hover{
@@ -95,14 +95,16 @@ img{
 }
 
 .info{
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
     font-size: 22px;
-    padding: 15px 0 0 5px;
+    text-align: center;
 }
 
- 
 p{
-    padding: 2px;
+    padding: 3px;
     font-size: 16px;
+    margin-left: 5px;
 }
 
 span{
@@ -112,9 +114,14 @@ span{
 span i{
     padding: 5px;
 }
+
+.info p span i a:hover {
+   
+    color: blueviolet;
+}
+
 .columnas{
     width: 30%;
     float: left;
-    margin-right: 5px;
-    text-align: center;
+    margin-right: 15px;
 }
